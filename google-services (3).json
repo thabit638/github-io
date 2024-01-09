@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "953737451176",
+    "project_id": "tham-9a607",
+    "storage_bucket": "tham-9a607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953737451176:android:a2edd6911be4947a34d49d",
+        "android_client_info": {
+          "package_name": "bnm_good.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs-s8eaeRdadTyOihW-NQ13B31x1V5t0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
