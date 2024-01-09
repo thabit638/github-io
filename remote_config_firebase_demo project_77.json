@@ -1,0 +1,158 @@
+{
+  "conditions": [
+    {
+      "name": "android-developer",
+      "expression": "app.id == '1:300830567303:android:9b9ba2ce17104d0c' && app.version.contains(['dev'])",
+      "tagColor": "ORANGE"
+    },
+    {
+      "name": "ios-developer",
+      "expression": "app.id == '1:300830567303:ios:09b1ab1d3ca29bda' && app.version.contains(['dev'])",
+      "tagColor": "BLUE"
+    },
+    {
+      "name": "v2.6.29",
+      "expression": "app.id == '1:300830567303:ios:09b1ab1d3ca29bda' && app.build.exactlyMatches(['2.6.29'])",
+      "tagColor": "GREEN"
+    },
+    {
+      "name": "0 to 25 percent",
+      "expression": "percent <= 25",
+      "tagColor": "TEAL"
+    },
+    {
+      "name": "25 to 50 percent",
+      "expression": "percent <= 50",
+      "tagColor": "TEAL"
+    },
+    {
+      "name": "50 to 75 percent",
+      "expression": "percent <= 75",
+      "tagColor": "BROWN"
+    },
+    {
+      "name": "AB Test",
+      "expression": "percent > 50",
+      "tagColor": "BLUE"
+    },
+    {
+      "name": "iOS",
+      "expression": "device.os == 'ios'",
+      "tagColor": "TEAL"
+    },
+    {
+      "name": "Android",
+      "expression": "device.os == 'android'",
+      "tagColor": "PINK"
+    },
+    {
+      "name": "v2.65",
+      "expression": "app.id == '1:300830567303:android:9b9ba2ce17104d0c' && app.version.==(['2.65'])",
+      "tagColor": "BLUE"
+    },
+    {
+      "name": "v2.6.53",
+      "expression": "app.id == '1:300830567303:ios:09b1ab1d3ca29bda' && app.version.==(['2.6.53'])",
+      "tagColor": "DEEP_ORANGE"
+    },
+    {
+      "name": "Android v2.87",
+      "expression": "app.id == '1:300830567303:android:9b9ba2ce17104d0c' && app.version.>=(['2.87'])",
+      "tagColor": "PURPLE"
+    },
+    {
+      "name": "Android v2.86",
+      "expression": "app.id == '1:300830567303:android:9b9ba2ce17104d0c' && app.version.==(['2.86'])",
+      "tagColor": "TEAL"
+    }
+  ],
+  "parameters": {
+    "extra_steps_pack_2_count": {
+      "defaultValue": {
+        "value": "8"
+      },
+      "valueType": "STRING"
+    },
+    "initial_extra_steps": {
+      "defaultValue": {
+        "value": "3"
+      },
+      "conditionalValues": {
+        "android-developer": {
+          "value": "100"
+        },
+        "ios-developer": {
+          "value": "100"
+        },
+        "0 to 25 percent": {
+          "value": "5"
+        },
+        "25 to 50 percent": {
+          "value": "10"
+        },
+        "50 to 75 percent": {
+          "value": "20"
+        }
+      },
+      "valueType": "STRING"
+    },
+    "app_install_ad_unit_id": {
+      "defaultValue": {
+        "value": "0"
+      },
+      "valueType": "STRING"
+    },
+    "extra_steps_pack_3_count": {
+      "defaultValue": {
+        "value": "20"
+      },
+      "valueType": "STRING"
+    },
+    "no_op_param": {
+      "defaultValue": {
+        "value": "no op"
+      },
+      "conditionalValues": {
+        "Android v2.87": {},
+        "Android v2.86": {}
+      },
+      "description": "no-op parameter",
+      "valueType": "STRING"
+    },
+    "interstitial_ad_frequency": {
+      "defaultValue": {
+        "value": "3"
+      },
+      "valueType": "STRING"
+    },
+    "interstitial_ad_unit_id": {
+      "defaultValue": {
+        "value": ""
+      },
+      "conditionalValues": {
+        "iOS": {
+          "value": "ca-app-pub-8123415297019784/3351035341"
+        },
+        "Android": {
+          "value": "ca-app-pub-8123415297019784/5013900567"
+        }
+      },
+      "valueType": "STRING"
+    },
+    "extra_steps_pack_1_count": {
+      "defaultValue": {
+        "value": "3"
+      },
+      "valueType": "STRING"
+    }
+  },
+  "version": {
+    "versionNumber": "77",
+    "updateTime": "2023-12-02T00:29:33.795441Z",
+    "updateUser": {
+      "email": "danasilver@google.com"
+    },
+    "updateOrigin": "CONSOLE",
+    "updateType": "INCREMENTAL_UPDATE"
+  }
+}
